@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<head>
+    <title>Hello HooverVictory</title>
+</head>
+<body>
+    <div id="content"></div>
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script src="@Url.Content("~/Scripts/readInput.js")"> </script>
+    <div id="page-wrapper">
+        <h1>LOAD YOUR MAPPED FILE </h1>
+        <div>
+            Select a text file:
+            <input type="file" id="fileInput">
+        </div>
+        <h2>YOUR INPUT FILE</h2>
+        <pre id="fileDisplayArea"></pre>
+        <div id="fileDisplayArea"></div>  
+      
+        <span class="readBytesButtons">
+            <button data-startbyte="0" data-endbyte="4" id="DimensionGrid">LOAD DATA FROM FILE</button>
+            <button>Visualize Results</button>
+        </span>
+        <h2>COMMAND</h2>
+        <div id="commandInput"></div>
+        <h2>FINAL HOOVER COORDINATES</h2>
+        <div id="CoordinatHooverResult"></div>            
+        <h2>FINAL COUNT DIRTY CLEANED</h2>
+        <div id="conteggio"></div>   
+        <input type="button" value="LOAD ANOTHER FILE" onClick="window.location.href=window.location.href">   
+       
+</div>
+</body>
+
+</html>
